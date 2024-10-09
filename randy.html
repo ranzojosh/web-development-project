@@ -30,31 +30,35 @@ body::before {
 }
 
     </style>
+   
+    </div>
 </head>
 <body>
-    <div class="profile-wrapper">
-        <div class="cover-image">
-       <div class="profile-container">
-        <img src="development-with-abstract-background.jpg" alt="Cover Image" class="cover-pic" width="2000" height="50">
+    <div class="profile-container">
         <img src="Randy.jpg.jpeg" alt="Profile Picture" class="profile-picture">
+    </div>
+    
+            
         <p>Hi, I'm Randy Joshua, a passionate developer. I love building web applications and learning new technologies.
             I am currently in my third year pursuing a degree in Microbiology, but my dedication to web development has led me to acquire extensive knowledge in HTML, CSS, JavaScript, and various frameworks such as React. In addition to my academic background, I have independently worked on several projects where I developed responsive websites and collaborated with peers to improve the functionality of web applications. My strong problem-solving skills and attention to detail ensure that my code is optimized and maintains high performance across all platforms.
         </p>
-    </div>
+    
     
     <header>
         <h1>Welcome to My Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#skills">skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+    
    
-     <section id="about">
+     <section id="About">
+        
         <h2>About Me</h2>
         <p>Hi, I'm Randy, a dedicated and versatile freelance web developer with a passion for crafting engaging and responsive websites. With a strong foundation in HTML, CSS, JavaScript, and frameworks like React, I have the technical expertise to build dynamic user experiences tailored to meet clients' unique needs.
 
@@ -76,6 +80,16 @@ body::before {
     </section>
     <section id="certifications">
         <h2>Certifications</h2>
+        <div class="certification-container">
+            <div class="Certification">
+                <img src="html-5-logo 2.png" alt="Certification image" width="200" height="200">
+                <div class="certification-info">
+                    <h3>Web Development Bootcamp</h3>
+                    <p>issued by: </p>
+                    <p>MM/DD/YYYY</p>
+                </div>
+            </div>
+        </div>
         <ul>
             <li>
                 <strong>Web Development Bootcamp</strong> – Completed on [Date]
@@ -94,16 +108,29 @@ body::before {
     </section>
     
 
-    <section id="projects">
+    <section id="projects"class="projects-section">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>A brief description of your first project.</p>
+        <div class="project-card" id="projectCard">
+            <h3>Campus Prep Website</h3>
+            <p>A WordPress site guiding Kenyan students through campus preparation.</p>
+            <a href="https://example.com/campus-prep">View Project</a>
         </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>A brief description of your second project.</p>
+
+
+        <div class="project-card" id="projectCard">
+            <h3>HTML portfolio</h3>
+            <p>A personal portfolio showcasing my programming and design skills.</p>
+            <a href="https://example.com/my-portfolio">View Project</a>
         </div>
+
+
+        <div class="project-card" id="projectCard">
+            <h3>Microbiology Lab Managment System</h4>
+            <p>A system developed to manage and record Microbiology lab processes</p>
+            <a href="https://example.com/lab managment">View Project</a>
+        </div>
+
+
     </section>
 
     <section id="contact">
@@ -122,9 +149,10 @@ body::before {
         </form>
         <footer>
             <p>Copyright @2024 &copy;Randy Joshua</p>
-        </footer>
+        </footer
     </section>
-
+    
+   
     <script src="script.js"></script>
 </body>
 </html>

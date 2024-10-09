@@ -5,23 +5,13 @@ body {
     padding: 0;
     line-height: 1.6;
 }
-.profile-wrapper {
-    position: relative; /* Enables absolute positioning within */
-    max-width: 800px; /* Set a maximum width for the profile section */
-    margin: 0 auto;
-}
 
-.cover-image {
-    position: relative;
-}
 
-.cover-pic {
-    width: 100%; /* Full width */
-    height: auto; /* Maintains aspect ratio */
-}
+
+
 
 .profile-picture {
-    position: absolute; /* Position relative to the cover image */
+   
     top: 150px; /* Adjust this value to place it correctly */
     left: 50%; /* Adjust this value for horizontal positioning */
     width: 150px;
@@ -144,14 +134,110 @@ section {
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
+.certification-container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding: 20px;
+}
+.certification{
+    display:flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1)
 
+}
+.certification img{
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.certification-info{
+    max-width: 600px;
+}
+.certification-info h3{
+    font-size: 1.5em;
+    margin-bottom: 8px;
+    color: #333;
+}
+.certification-info p{
+    font-size: 1em;
+    color: #666;
+    margin: 4px 0;
+}
 /* Project section */
 .project {
     margin-bottom: 2rem;
     background-color: black;
     padding: 1rem;
     border-radius: 8px;
+
 }
+.profile-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px;
+    background-color: #f0f48f;
+    background-image:url('code-1076536_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    padding: 40px;
+    
+    
+
+}
+.project-card{
+    background: linear-gradient(135deg,#6a11cb 0%,#2575fc 100%);
+    background-color:#fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    width: 320px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+    transition:  transform 0.4s ease,box-shadow 0.4s ease;
+}
+.project-card :hover{
+    transform: translateY(-12px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0);
+}
+.project-card h3{
+    font-size: 22px;
+    color: #333;
+    
+
+}
+.project-card p{
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 10px;
+}
+.project-card a{
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.project-card a:hover{
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
 
 /* Contact form styles */
 form {
